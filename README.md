@@ -21,7 +21,7 @@ or,
 ```
 kubectl get nodes
 ```
-# Install Heml on Macos
+# Install Helm on Macos
 ```
 /opt/homebrew/bin/brew install helm
 ```
