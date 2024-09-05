@@ -9,7 +9,7 @@ spec:
   entryPoints:
     - websecure
   routes:
-    - match: Host(`traefik.homelab.tawfiqulbari.work`) # change this to your domain
+    - match: Host(`traefik.mac.tawfiqulbari.work`) # change this to your domain
       kind: Rule
       middlewares:
         - name: traefik-dashboard-basicauth

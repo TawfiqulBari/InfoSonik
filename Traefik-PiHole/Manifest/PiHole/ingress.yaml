@@ -10,12 +10,12 @@ spec:
   entryPoints:
     - websecure
   routes:
-    - match: Host(`www.pihole.homelab.tawfiqulbari.work`) # change to your domain
+    - match: Host(`www.pihole.mac.tawfiqulbari.work`) # change to your domain
       kind: Rule
       services:
         - name: pihole
           port: 80
-    - match: Host(`pihole.homelab.tawfiqulbari.work`) # change to your domain
+    - match: Host(`pihole.mac.tawfiqulbari.work`) # change to your domain
       kind: Rule
       services:
         - name: pihole

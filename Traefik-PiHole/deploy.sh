@@ -1,23 +1,5 @@
 #!/bin/bash
 
-echo -e " \033[33;2m    __  _          _        ___                            \033[0m"
-echo -e " \033[33;2m    \ \(_)_ __ ___( )__    / _ \__ _ _ __ __ _  __ _  ___  \033[0m"
-echo -e " \033[33;2m     \ \ | '_ \` _ \/ __|  / /_\/ _\` | '__/ _\` |/ _\` |/ _ \ \033[0m"
-echo -e " \033[33;2m  /\_/ / | | | | | \__ \ / /_\\  (_| | | | (_| | (_| |  __/ \033[0m"
-echo -e " \033[33;2m  \___/|_|_| |_| |_|___/ \____/\__,_|_|  \__,_|\__, |\___| \033[0m"
-echo -e " \033[33;2m                                               |___/       \033[0m"
-echo -e " \033[36;2m             Traefik, Cert-Manager, and PiHole            \033[0m"
-echo -e " \033[32;2m                                                          \033[0m"
-echo -e " \033[32;2m             https://youtube.com/@jims-garage              \033[0m"
-echo -e " \033[32;2m                                                           \033[0m"
-
-# ENSURE THAT YOU COPY AND AMEND YOUR YAML FILES FIRST!!!
-# THE SCRIPT EXPECTS THE FILES TO BE IN ~/Helm/Traefik/ & ~/Manifest/Crowdsec & ~/Manifest/PiHole etc
-# RUN THIS SCRIPT FROM THE HOME DIRECTORY
-
-# Script created from Official Documentation available at: https://cert-manager.io/docs/tutorials/acme/nginx-ingress/
-# and https://github.com/traefik/traefik-helm-chart
-
 # Step 0: Clone repository
 DESTINATION=~/Helm/Traefik
 if [ ! -d "`eval echo ${DESTINATION//>}`" ]; then
